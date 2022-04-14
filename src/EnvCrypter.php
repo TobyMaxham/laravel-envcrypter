@@ -75,7 +75,7 @@ class EnvCrypter
         $salt = sha1(mt_rand());
 
         // Initialization Vector, randomly generated and saved each time
-        $iv = substr(sha1(mt_rand()), 0, 32);
+        $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length($this->algo));
         $encrypted = $this->callSslCrypt('encrypt', $value, $salt, $iv);
 
         return base64_encode("$salt:$iv:$encrypted");
