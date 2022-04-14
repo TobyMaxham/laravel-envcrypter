@@ -1,0 +1,32 @@
+{
+    "name": "tobymaxham/laravel-envcrypter",
+    "description": "This package can be used to encrypt and decrypt your .env file.",
+    "keywords": [
+        "TobyMaxham",
+        "laravel",
+        "encrypt",
+        "decrypt"
+    ],
+    "homepage": "https://github.com/TobyMaxham/laravel-envcrypter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": ":TobyMaxham",
+            "email": "git@maxham.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "TobyMaxham\\LaravelEnvCrypter\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
